@@ -2,17 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes there */
-
 /**
+ *main - Entry point
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Sucess)
- *
- *     */
+ * Return: Always 0 (Sucess)
+ */
 
 int main(void)
 
@@ -33,5 +27,4 @@ int main(void)
 	printf("%d is zero\n", n);
 }
         return (0);
-
 }
