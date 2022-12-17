@@ -1,33 +1,32 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 
 /**
- * maim - Prints a text accorfing number
- * Return: Always (Success)
- *
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
-	int n, lastd;
+	int n, lastNum;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastd = n % 10;
-
-	if (lastd > 5)
+	lastNum = n % 10;
+	if (lastNum > 5)
 	{
-	printf("Last digit of %d is %d amd is greater than 5\n", n, lastd);
+	printf("Last digit of %d is %d amd is greater than 5\n", n, lastNum);
 	}
-	else if (lastd == 0)
+	else if (lastNum == 0)
 	{
-	printf("Last digit of %d is %d anf is 0\n", n, lastd);
+	printf("Last digit of %d is %d anf is 0\n", n, lastNum);
 	}
-	else if (lastd < 6 && lastd != 0)
+	else if (lastNum < 6 && lastNum != 0)
 	{
-	printf("Last digit of %d is %d amd is less than 6 not 0\n", n, lastd);
+	printf("Last digit of %d is %d amd is less than 6 not 0\n", n, lastNum)
 	}
 	return (0);
 }
