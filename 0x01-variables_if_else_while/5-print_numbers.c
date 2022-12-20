@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
- * main - prints the alphabet
+ * main - prints strings from 0 to 9
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-	char la;
+	int num;
 
-	for (la = 'a'; la <= 'z'; la++)
-	{
-		if (la != 'e' && la != 'q')
-			putchar(la);
+	for (num = 0; num < 10; num++)
+			putchar((num % 10) + '0');
 	}
 	putchar('\n');
 	return (0);
