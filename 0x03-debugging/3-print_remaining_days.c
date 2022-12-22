@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include "main.h"
 
-/***
- * main - takes a date and prints how many days are left in the year, taking
- * leap years into account
+/**
+ * print_remaining_days - takes a date and prints how many days are
+ * left in the year, taking leap years into account
  * @month: month in number format
  * @day: day of month
- * Return: day of year
+ * @year: year
+ * Return: void
  */
 
-int convert_day(int month, int day)
+int convert_day(int month, int day, int year)
 {
 	if ((year % 4 == 0) && (year % 400 == 0 || year % 100 != 0))
 	{
