@@ -2,12 +2,16 @@
 #include <stdio.h>
 
 /**
+ * main - check the code
+ *
  * Find the end of the dest string
+ *
  * Append src to end of dest
+ *
+ * Return: Always 0.
  */
 
 char *_strcat(char *dest, char *src)
-
 {
 	char *dest_end = dest;
 		while (*dest_end != '\0')
@@ -22,5 +26,5 @@ char *_strcat(char *dest, char *src)
 			src++;
 		}
 		*dest_end = '\0';
-		return (dest);
+		return (0);
 }
