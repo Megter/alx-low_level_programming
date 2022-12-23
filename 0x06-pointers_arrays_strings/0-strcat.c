@@ -2,13 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Find the end of the dest string
- *
- * Append src to end of dest
- *
- * Return: Always 0.
+ * *_strcat - cocatenates two strings
+ * @dest: pointer destination
+ * @src: pointer source
+ * Return: void
  */
 
 char *_strcat(char *dest, char *src)
